@@ -1,0 +1,6 @@
+name: SONARR - TsundereRaws
+pattern: \bTsundere[ .-]?Raws\b
+description: ''
+tags:
+- sonarr
+tests: []

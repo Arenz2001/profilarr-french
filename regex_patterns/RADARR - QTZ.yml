@@ -1,0 +1,6 @@
+name: RADARR - QTZ
+pattern: \bQTZ\b
+description: ''
+tags:
+- radarr
+tests: []

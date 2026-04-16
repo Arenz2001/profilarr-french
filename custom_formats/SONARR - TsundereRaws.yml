@@ -1,0 +1,47 @@
+name: SONARR - TsundereRaws
+description: TsundereRaws - priorité maximale pour les animes
+tags:
+- sonarr
+conditions:
+- name: TsundereRaws
+  negate: false
+  pattern: SONARR - TsundereRaws
+  required: true
+  type: release_group
+tests:
+- conditionResults:
+  - matches: true
+    name: TsundereRaws
+    negate: false
+    pattern: SONARR - TsundereRaws
+    required: true
+    type: release_group
+  expected: true
+  id: 1
+  input: "[TsundereRaws] Shingeki no Kyojin - 01 [BD 1080p HEVC x265 FLAC]"
+  lastRun: '2026-04-16T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: true
+    name: TsundereRaws
+    negate: false
+    pattern: SONARR - TsundereRaws
+    required: true
+    type: release_group
+  expected: true
+  id: 2
+  input: "[Tsundere-Raws] Kimetsu no Yaiba - 26 [BDRip 1080p x264 AAC]"
+  lastRun: '2026-04-16T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: false
+    name: TsundereRaws
+    negate: false
+    pattern: SONARR - TsundereRaws
+    required: true
+    type: release_group
+  expected: false
+  id: 3
+  input: "[SERQPH] One Piece - 1100 [WEBRip 1080p x265 AAC]"
+  lastRun: '2026-04-16T00:00:00.000000'
+  passes: true

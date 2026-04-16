@@ -1,0 +1,48 @@
+name: RADARR - QTZ
+description: Encodeur QTZ - priorité maximale pour les releases 4K Light
+tags:
+- radarr
+conditions:
+- name: QTZ Team
+  negate: false
+  pattern: RADARR - QTZ
+  required: true
+  type: release_group
+tests:
+- conditionResults:
+  - matches: true
+    name: QTZ Team
+    negate: false
+    pattern: RADARR - QTZ
+    required: true
+    type: release_group
+  expected: true
+  id: 1
+  input: Judas and the Black Messiah (2021) MULTi VFI 2160p 10bit 4KLight DV HDR BluRay
+    TrueHD 7.1 Atmos x265-QTZ
+  lastRun: '2026-04-16T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: false
+    name: QTZ Team
+    negate: false
+    pattern: RADARR - QTZ
+    required: true
+    type: release_group
+  expected: false
+  id: 2
+  input: Dune 2021 MULTi VF2 1080p BluRay x264-PopHD
+  lastRun: '2026-04-16T00:00:00.000000'
+  passes: true
+- conditionResults:
+  - matches: false
+    name: QTZ Team
+    negate: false
+    pattern: RADARR - QTZ
+    required: true
+    type: release_group
+  expected: false
+  id: 3
+  input: Interstellar.2014.MULTi.VFF.2160p.BluRay.REMUX.HEVC.DTS-HD.MA.5.1-FrenchMix
+  lastRun: '2026-04-16T00:00:00.000000'
+  passes: true
